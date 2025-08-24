@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SFML Project",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "main.cpp", "-o", "sfml-app",
+                "-I", "C:/Users/Roman/Documents/library-windows-vc17-64-bit/SFML-3.0.0/include",
+                "-L", "C:/Users/Roman/Documents/library-windows-vc17-64-bit/SFML-3.0.0/lib",
+                "-lsfml-graphics", "-lsfml-window", "-lsfml-system"
+            ],
+    
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
